@@ -1,0 +1,33 @@
+
+NAME
+	brsccs.vim - an SCCS browser.
+
+DESCRIPTION
+
+	It allows you to scroll the history back and forth
+	looking at how the code has changed in a convenient way.
+
+	This plugin does not allow you to create a new version
+	or to watch the sophisticated diffs.
+
+	To start browsing an sccs file press ,v
+
+	Two windows will pop up: sccs versions and sccs browser.
+	In the sccs browser you see the text annotated by the version numbers.
+	Each line has the version number when it has changed the last time.
+	Press enter in any such line and you jump right to that version.
+	Press ,< and you jump right "under" that version. I.e. right before
+	that line was changed.
+
+KEYS DEFINED
+	enter		go to the version that annotation specifies
+	,v 		start the SCCS browser
+	,- 		go back one version
+	,+ or ,=	go forward one version
+	,<		go one version earlier than the annotation specifies
+
+BUGS
+	See TODO in the source of the script.
+
+SEE ALSO 
+	sccs.vim sccs-menu.vim bk-menu.vim

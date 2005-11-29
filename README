@@ -1,0 +1,23 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1413
+
+        It allows you to scroll the history back and forth  looking at how the code has changed in a convenient way.
+
+       Very helpful if you work with Sun Studio + Vim + TeamWare.
+
+        To start browsing an sccs file press ,v
+
+        Two windows will pop up: sccs versions and sccs browser.
+        In the sccs browser you see the text annotated by the version numbers.
+        Each line has the version number when it has changed the last time.
+        Press enter in any such line and you jump right to that version.
+        Press ,< and you jump right "under" that version. I.e. right before
+        that line was changed.
+       The plugin tries to track your position in the file so that you stay on the same line when move through the history
+
+        enter           go to the version that annotation specifies
+        ,v              start the SCCS browser
+        ,-              go back one version
+        ,+ or ,=        go forward one version
+        ,<              go one version earlier than the annotation specifies
+
+
